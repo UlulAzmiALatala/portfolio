@@ -37,14 +37,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();                                            // Menggunakan SMTP
         $mail->Host       = 'smtp.gmail.com';                       // Ganti dengan server SMTP Anda (contoh: smtp.gmail.com)
         $mail->SMTPAuth   = true;                                   // Mengaktifkan otentikasi SMTP
-        $mail->Username   = 'youremail@gmail.com';                 // Ganti dengan alamat email SMTP Anda
-        $mail->Password   = 'yourpassword';
+        $mail->Username   = 'ullulazmia.l@gmail.com';                 // Ganti dengan alamat email SMTP Anda
+        $mail->Password   = 'jhfm anfi ogeb izaj';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Mengaktifkan enkripsi TLS implisit
         $mail->Port       = 465;                                    // Port TCP untuk SMTPS
 
         // Penerima Email
         $mail->setFrom($email, $name); // Email pengirim diambil dari form
-        $mail->addAddress('youremail@gmail.com', 'nama'); // GANTI DENGAN EMAIL TUJUAN ANDA
+        $mail->addAddress('ullulazmia.l@gmail.com', 'Ulul Azmi A. Latala'); // GANTI DENGAN EMAIL TUJUAN ANDA
         $mail->addReplyTo($email, $name); // Agar saat membalas, langsung ke email pengirim
 
         // Konten Email
